@@ -78,7 +78,7 @@ const config = {
             },
             //file-loader (images)
             {
-                test: /\.(jpg|png|gif|svg)$/,
+                test: /\.(jpg|png|gif|svg|ico)$/,
                 use: [
                     {
                         loader: 'file-loader',
@@ -99,7 +99,8 @@ const config = {
     plugins: [
         new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin({
-            template : 'index.html'
+            template : 'index.html',
+            favicon: 'assets/media/img/favicon.ico'
         }),
         new webpack.HotModuleReplacementPlugin(),
         extractPlugin
