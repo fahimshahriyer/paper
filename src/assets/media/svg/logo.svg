@@ -1,35 +1,13 @@
 
-<svg width="218px" height="277px" viewBox="0 0 218 277" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <defs>
-        <path d="M0.777,70.603 C0.777,50.804 26.336,27.27 77.455,0 L218,128.834 L56.781,247 C19.444,149.201 0.777,90.401 0.777,70.603 Z" id="path-1"></path>
-        <linearGradient x1="60.123376%" y1="35.15625%" x2="60.123376%" y2="135.15625%" id="linearGradient-3">
-            <stop stop-color="#43E695" offset="0%"></stop>
-            <stop stop-color="#3BB2B8" offset="100%"></stop>
-        </linearGradient>
-        <path d="M0.777,70.603 C0.777,90.401 19.444,149.201 56.781,247 L218,128.834 L77.455,0 C26.336,27.27 0.777,50.804 0.777,70.603" id="path-4"></path>
-        <linearGradient x1="5.85781174%" y1="13.407004%" x2="96.072522%" y2="91.0550607%" id="linearGradient-6">
-            <stop stop-color="#43E695" offset="0%"></stop>
-            <stop stop-color="#3BB2B8" offset="100%"></stop>
-        </linearGradient>
-    </defs>
+<svg width="218px" height="256px" viewBox="0 0 218 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop-HD" transform="translate(-1083.000000, -360.000000)">
-            <g id="Page-1" transform="translate(1083.000000, 360.000000)">
-                <g id="Group-3">
-                    <mask id="mask-2" fill="white">
-                        <use xlink:href="#path-1"></use>
-                    </mask>
-                    <g id="Clip-2"></g>
-                    <polygon id="Fill-1" fill="url(#linearGradient-3)" mask="url(#mask-2)" points="-865 664 575 664 575 -360 -865 -360"></polygon>
-                </g>
-                <g id="Group-6">
-                    <mask id="mask-5" fill="white">
-                        <use xlink:href="#path-4"></use>
-                    </mask>
-                    <g id="Clip-5"></g>
-                    <path d="M0.777,70.603 C0.777,90.401 19.444,149.201 56.781,247 L218,128.834 L77.455,0 C26.336,27.27 0.777,50.804 0.777,70.603" id="Fill-4" fill="url(#linearGradient-6)" mask="url(#mask-5)"></path>
-                </g>
-                <polygon id="Fill-7" fill="#8E8E8E" points="63.3302 254.7547 140.8172 276.9747 163.0362 199.4867"></polygon>
+        <g id="Desktop-HD" transform="translate(-925.000000, -157.000000)">
+            <g id="Group-2-Copy" transform="translate(925.000000, 157.000000)">
+                <path d="M76.6781173,0 C25.5593724,27.2697864 1.06617344e-15,50.8040456 0,70.6027777 C0,90.4015098 18.6680495,149.200584 56.0041484,247 L217.223386,128.83361 L76.6781173,0 Z" id="Path-Copy" fill="#D8D8D8"></path>
+                <polygon id="Triangle-Copy" fill="#8E8E8E" transform="translate(121.126966, 238.487939) rotate(151.000000) translate(-121.126966, -238.487939) " points="109.048584 223.529429 182.725095 253.446448 59.5288379 248.320411"></polygon>
             </g>
         </g>
     </g>

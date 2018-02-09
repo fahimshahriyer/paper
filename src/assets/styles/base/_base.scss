@@ -49,5 +49,28 @@ body
 {
     min-height: 100%;
 
-    background: #f2f4f8;
+    background: #323232;
+}
+
+.wrapper
+{
+    display: grid;
+    align-content: center;
+
+    text-align: center;
+
+    grid-template-columns: auto;
+    grid-template-rows: 100vh;
+
+    .content
+    {
+        align-self: center;
+    }
+    .heading
+    {
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 100;
+        color: #ffffff;
+    }
 }
