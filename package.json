@@ -1,0 +1,37 @@
+{
+  "name": "paper",
+  "version": "1.0.0",
+  "description": "Frontend Developement Startar Kit",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack -p",
+    "watch": "./node_modules/.bin/webpack --watch",
+    "start": "./node_modules/.bin/webpack-dev-server --open"
+  },
+  "keywords": [
+    "frontend",
+    "startter",
+    "boilerplate"
+  ],
+  "author": "Fahim Shahriyer",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.18",
+    "file-loader": "^1.1.6",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^2.30.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  },
+  "dependencies": {
+    "css-loader": "^0.28.9",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.1",
+    "uikit": "^3.0.0-beta.40"
+  }
+}
