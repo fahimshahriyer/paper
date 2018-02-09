@@ -1,10 +1,16 @@
 const path = require('path');
+const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const webpack = require('webpack');
 
-const extractPlugin = new ExtractTextPlugin({ filename: './assets/styles/app.css' });
+// Is the current build a development build
+const IS_DEV = (process.env.NODE_ENV === 'dev');
+
+const extractPlugin = new ExtractTextPlugin({ 
+    filename: './assets/styles/app.css',
+    disable: process.env.NODE_ENV === "dev"
+});
 
 const config = {
     context: path.resolve(__dirname,'src'),
@@ -34,13 +40,40 @@ const config = {
                 test: /\.html$/,
                 use: ['html-loader']
             },
-            // sass-loader
+            // STYLES
             {
-                test: /\.scss$/,
-                include: [path.resolve(__dirname, 'src', 'assets', 'styles')],
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: IS_DEV
+                        }
+                    },
+                ]
+            },
+
+            // CSS / SASS
+            {
+                test: /\.scss/,
                 use: extractPlugin.extract({
-                    use: ['css-loader', 'sass-loader'],
-                    fallback: 'style-loader'
+                    use: [
+                        {
+                            loader: 'css-loader',
+                            options: {
+                                sourceMap: IS_DEV
+                            }
+                        },
+                        {
+                            loader: 'sass-loader',
+                            options: {
+                                sourceMap: IS_DEV,
+                                includePaths: [path.resolve(__dirname, 'src', 'assets', 'styles')]
+                            }
+                        },
+                    ],
+                    fallback : 'style-loader'
                 })
             },
             //file-loader (images)
